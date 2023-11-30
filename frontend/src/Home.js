@@ -12,7 +12,8 @@ const topSectionStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#003366', // Adjust the background color as needed
+  backgroundColor: '#3498db', // Background color for the top section
+  color: '#fff', // Text color for the top section
 };
 
 const bottomSectionStyle = {
@@ -22,13 +23,13 @@ const bottomSectionStyle = {
 
 const leftSectionStyle = {
   flex: 0.5,
-  backgroundColor:'#0066b5', // Adjust the background color as needed
+  backgroundColor: '#2ecc71', // Background color for the left section
   padding: '20px',
 };
 
 const rightSectionStyle = {
-  flex: 3,
-  backgroundColor: '#d0d0d0', // Adjust the background color as needed
+  flex: 1.5,
+  backgroundColor: '#e74c3c', // Background color for the right section
   padding: '20px',
 };
 
@@ -37,7 +38,7 @@ function Home() {
     <div style={homeStyle}>
       {/* Top Section */}
       <div style={topSectionStyle}>
-        <h2>COLLEGE MANAGEMENT SYSTEM</h2>
+        <h2>Welcome to the Home Page</h2>
       </div>
 
       {/* Bottom Section */}
@@ -51,7 +52,7 @@ function Home() {
         <div style={rightSectionStyle}>
           {/* Add your image component or content here */}
           <img
-            src="/cms1.jpg"
+            src="/path/to/your/image.jpg"
             alt="Description of the image"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />

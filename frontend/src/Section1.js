@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import RegistrationForm from './RegistrationForm'; // Import your registration form component
+import RegistrationForm from './RegistrationForm'; 
 
 const sectionStyle = {
   display: 'flex',
@@ -9,29 +9,23 @@ const sectionStyle = {
 
 const leftSectionStyle = {
   flex: 0.5,
-  backgroundColor: 'cyan', // Adjust the background color as needed
+  backgroundColor: 'cyan',
   padding: '20px',
 };
-
 const rightSectionStyle = {
   flex: 3,
-  backgroundColor: '#d0d0d0', // Adjust the background color as needed
+  backgroundColor: '#d0d0d0', 
   padding: '20px',
 };
 
 function Section1() {
   return (
     <div style={sectionStyle}>
-      {/* Left Section (Menu Bar) */}
       <div style={leftSectionStyle}>
         <Menu />
       </div>
-
-      {/* Right Section (Registration Form) */}
       <div style={rightSectionStyle}>
-        
         <RegistrationForm />
-        {/* Add any other specific content for Section1 here */}
       </div>
     </div>
   );
