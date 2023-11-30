@@ -1,0 +1,41 @@
+.menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .menu-container.open .menu-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-links {
+    display: none;
+    margin: 0;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-links a:hover {
+    background-color: #eee;
+  }
+  
